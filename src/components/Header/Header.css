@@ -1,0 +1,9 @@
+header {
+    min-height: 6vh;
+    background-color: white;
+}
+
+header h3 {
+    color: black;
+    font-weight: 100;
+}

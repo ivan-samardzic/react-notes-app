@@ -1,0 +1,7 @@
+.notes-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 1400px;
+    margin: 40px auto;
+}

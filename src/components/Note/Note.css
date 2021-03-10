@@ -1,0 +1,38 @@
+.note-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 350px;
+    min-height: 45vh;
+    margin: 10px 25px;
+    padding: 20px;
+    position: relative;
+    background-color: white;
+}
+
+.note-container i {
+    color: black;
+    font-size: 24px;
+}
+
+.note-container .note-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+.note-container .note-date {
+    font-weight: 700;
+    margin: 5px 0px;
+}
+
+.note-container .note-text {
+    color: #333;
+    line-height: 30px;
+}
+
+.note-container .note-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}

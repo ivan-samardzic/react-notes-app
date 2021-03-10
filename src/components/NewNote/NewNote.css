@@ -1,0 +1,38 @@
+.new-note-container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    background-color: white;
+    padding: 10px;
+    max-width: 1250px;
+}
+
+.new-note-container .new-note-title {
+    font-size: 36px;
+    margin: 10px 0px 10px 10px;
+}
+.add-form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.new-note-container .add-form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+
+.new-note-container .add-form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.new-note-container .add-form-container button {
+    max-width: 150px;
+    max-height: 50px;
+    position: absolute;
+    top: 50%;
+    right: 43%;
+}
