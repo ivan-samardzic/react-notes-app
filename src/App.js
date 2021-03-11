@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Header from './components/Header/Header'
 import Notes from './components/Notes/Notes'
 import NewNote from './components/NewNote/NewNote'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false)
@@ -27,17 +28,25 @@ const App = () => {
     }
   ])
 
-  const addNote = (note) => {
+  const addNote = (newNote) => {
     const id = Math.round(Math.random() * 10000) + 1;
-    const newNote = {id, ...note};
-    setNotes([...notes, newNote]);
+    const newNotes = {id, ...newNote};
+    setNotes([...notes, newNotes]);
+  }
+
+  const deleteNote = (deletedNote) => {
+    const newNotes = notes.filter((note) => 
+    note.id !== deletedNote.id);
+
+    setNotes(newNotes);
   }
 
   return (
     <div className="container-fluid">
       <Header heading='Notes App' />
-      <Notes notes={notes} />
+      <Notes notes={notes}  deleteNote={deleteNote}/>
       <NewNote addNote={addNote}/>
+      <Footer />
     </div>
   );
 }
