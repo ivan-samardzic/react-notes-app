@@ -1,4 +1,5 @@
 import React from 'react'
+import './Clock.css'
 
 const Clock = () => {
 
@@ -6,12 +7,15 @@ const Clock = () => {
         const time = new Date();
         const hours = time.getHours();
         const minutes = time.getMinutes();
-
-        return hours + ":" + minutes;
+        if(minutes < 10) {
+            return hours + ":" + "0" + minutes;
+        } else {
+            return hours + ":" + minutes;
+        }
     }
     return (
-        <div>
-            {generateTime()}
+        <div className="clock-box">
+            <p>{generateTime()}</p>
         </div>
     )
 }

@@ -1,0 +1,13 @@
+.clock-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-box p {
+    margin: auto;
+    font-size: 20px;
+    font-weight: 600;
+    color: #aaa;
+}
