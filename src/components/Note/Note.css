@@ -8,6 +8,7 @@
     padding: 20px;
     position: relative;
     background-color: white;
+    border-top: 2px solid #bbb;
 }
 
 .note-container i {
@@ -33,6 +34,6 @@
 
 .note-container .note-btn {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     right: 20px;
 }
