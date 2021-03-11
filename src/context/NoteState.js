@@ -25,6 +25,10 @@ const NoteState = props => {
         const newNotes = [...notes, newNote];
         setNotes(newNotes);  
         saveToLocalStorage(newNotes);
+
+        // setTimeout(() => {
+        //   setNotes(newNotes);
+        // }, 500);
       };
     
       const deleteNote = (deletedNote) => {
@@ -32,6 +36,10 @@ const NoteState = props => {
         note.id !== deletedNote.id);
         setNotes(newNotes);
         saveToLocalStorage(newNotes);
+
+        // setTimeout(() => {
+        //   setNotes(newNotes);
+        // }, 500);
       };
 
       return (
