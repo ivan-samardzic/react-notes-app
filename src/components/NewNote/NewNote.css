@@ -1,10 +1,10 @@
 .new-note-container {
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: auto 50px;
     background-color: white;
     padding: 10px;
-    max-width: 1250px;
+    width: 1250px;
 }
 
 .new-note-container .new-note-title {
@@ -30,9 +30,9 @@
 }
 
 .new-note-container .add-form-container button {
-    max-width: 150px;
-    max-height: 50px;
+    width: 160px;
+    height: 40px;
     position: absolute;
-    top: 50%;
-    right: 43%;
+    top: 80%;
+    right: 35%;
 }
